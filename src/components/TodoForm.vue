@@ -26,7 +26,7 @@ data: function(){
 <style>
     #caixa2{
         height: 100px;
-        width: 540px;
+        width: 550px;
         border: 1px white solid;
         border-radius: 5px;
         background-color: white;

@@ -5,6 +5,7 @@
           {{caixa.descricao}}
       </div>
   </div>
+  
 </template>
 
 <script>
@@ -17,13 +18,14 @@ export default {
 <style>
     #caixa{
         margin: 30px auto 10px auto;
-        width: 540px;
-        height: 200px;
+        width: 550px;
+        height: 160px;
         border: white 1px solid;
         border-radius: 5px;
         background-color: white;
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        overflow: auto;
     }
     #caixinhas{
         width: 120px;
@@ -37,10 +39,10 @@ export default {
         font-family: cursive;
         color: white;
         font-size: 13px;
-        margin-top: -70px;
+        
     }
     h2{
         font-family: cursive;
         margin: 0 0 0 120px;
-    }
+        }
 </style>

@@ -26,7 +26,7 @@ export default {
     }
   }, methods: {
     salvaTarefa: function(event){
-     this.caixinhas.push(event.descricao);
+     this.caixinhas.push({descricao:event.descricao})
     }
   }
 }
