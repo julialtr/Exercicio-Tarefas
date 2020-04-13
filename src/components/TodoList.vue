@@ -28,7 +28,7 @@ export default {
         overflow: auto;
     }
     #caixinhas{
-        width: 120px;
+        width: (caixinhas);
         height: 50px;
         border: 1px rgb(63, 60, 60) solid;
         background-color: rgb(63, 60, 60);
@@ -43,6 +43,6 @@ export default {
     }
     h2{
         font-family: cursive;
-        margin: 0 0 0 120px;
+        margin: 0 100px 0 120px;
         }
 </style>
