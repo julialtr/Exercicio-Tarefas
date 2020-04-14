@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <todo-form :caixinhas="caixinhas" @salvarTarefa="salvaTarefa($event)"/>
-    <todo-list :caixinhas="caixinhas"/>
+    <todo-form  @salvarTarefa="salvaTarefa($event)"/>
+    <todo-list/>
   </div>
 </template>
 
@@ -11,25 +11,14 @@ import TodoList from "./components/TodoList.vue"
 export default {
   name: 'App',
   components: {
-    TodoForm,
+    TodoForm, 
     TodoList
   }, data: function(){
     return{
-      caixinhas:[{
-        descricao: "Estudar Vue"
-      }, {
-        descricao: "Estudar Física"
-      }, {
-        descricao: "Jogar videogame"
-      }
-      ]
-    }
-  }, methods: {
-    salvaTarefa: function(event){
-     this.caixinhas.push({descricao:event.descricao})
     }
   }
 }
+
 </script>
 
 <style>

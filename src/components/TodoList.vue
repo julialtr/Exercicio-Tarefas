@@ -11,7 +11,11 @@
 <script>
 export default {
     name: "TodoList",
-    props: ['caixinhas']
+    computed:{
+        caixinhas(){
+            return this.$store.state.caixinhas
+        }
+    }
 }
 </script>
 

@@ -9,14 +9,18 @@
 <script>
 export default {
 name: "TodoForm",
-props: ['caixinhas'],
+computed:{
+    caixinhas(){
+        return this.$store.state.caixinhas
+    }
+},
 data: function(){
     return{
         descricao: ''
     }
 }, methods: {
     salvaTarefa: function(){
-        this.$emit('salvarTarefa', {
+        this.$store.commit('salvaTarefa', {
             descricao: this.descricao
         })
     }
